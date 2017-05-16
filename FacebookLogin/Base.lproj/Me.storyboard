@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Me View Controller-->
+        <scene sceneID="Hpq-BW-HsW">
+            <objects>
+                <tableViewController storyboardIdentifier="MeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QFe-mr-lh6" customClass="MeViewController" customModule="Bizfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ist-NC-5jm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="AfI-JU-CxI">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AfI-JU-CxI" id="9dm-bN-3aj">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QFe-mr-lh6" id="q8K-Bf-rvI"/>
+                            <outlet property="delegate" destination="QFe-mr-lh6" id="Q4N-We-X5g"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="8ls-Hw-K8b"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TH2-Ri-8AG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956" y="125.4872563718141"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="rbA-Mb-Red">
+            <objects>
+                <navigationController storyboardIdentifier="Me Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ojj-Kv-Nka" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Me" image="account" selectedImage="account_hover" id="pwD-Qt-2R9"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bJc-39-Oe9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QFe-mr-lh6" kind="relationship" relationship="rootViewController" id="uBH-z2-tZm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7b9-9u-tyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.800000000000001" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="account" width="26" height="26"/>
+        <image name="account_hover" width="26" height="26"/>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="hnX-Su-7sU">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LtP-fE-EUr" customClass="HomeViewController" customModule="Bizfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MkR-eM-y2q"/>
+                        <viewControllerLayoutGuide type="bottom" id="7ZB-ok-Oxz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W4a-mi-kTq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is home view controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pG4-kg-nWi">
+                                <rect key="frame" x="37" y="313" width="300" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pG4-kg-nWi" firstAttribute="leading" secondItem="W4a-mi-kTq" secondAttribute="leadingMargin" constant="21" id="geq-Fh-Kqk"/>
+                            <constraint firstItem="pG4-kg-nWi" firstAttribute="centerX" secondItem="W4a-mi-kTq" secondAttribute="centerX" id="kUF-yl-7Tn"/>
+                            <constraint firstItem="pG4-kg-nWi" firstAttribute="centerY" secondItem="W4a-mi-kTq" secondAttribute="centerY" id="kwu-AG-roj"/>
+                            <constraint firstItem="7ZB-ok-Oxz" firstAttribute="top" secondItem="pG4-kg-nWi" secondAttribute="bottom" constant="265" id="qdx-c9-X0y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PrQ-gK-4bP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j30-OJ-Hd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1921" y="127"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="f8g-M7-mbI">
+            <objects>
+                <navigationController storyboardIdentifier="Home Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="GQW-Qt-sad" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home_hover" id="E0b-9X-QzE"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8F4-yD-W1Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LtP-fE-EUr" kind="relationship" relationship="rootViewController" id="qV3-J5-Ipp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tfQ-GP-6br" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167" y="126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home" width="50" height="50"/>
+        <image name="home_hover" width="50" height="50"/>
+    </resources>
+</document>

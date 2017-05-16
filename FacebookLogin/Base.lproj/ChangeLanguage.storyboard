@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="z9P-HM-4T2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="Ioc-AI-Mff">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KgK-ge-CfJ" customClass="SplashViewController" customModule="Bizfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1br-bs-VL3"/>
+                        <viewControllerLayoutGuide type="bottom" id="zhi-nb-a2h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VJX-1h-wet">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvr-Re-Zdj">
+                                <rect key="frame" x="153" y="323" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fvr-Re-Zdj" firstAttribute="centerY" secondItem="VJX-1h-wet" secondAttribute="centerY" id="DDQ-oy-uOx"/>
+                            <constraint firstItem="Fvr-Re-Zdj" firstAttribute="centerX" secondItem="VJX-1h-wet" secondAttribute="centerX" id="s57-su-0P5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="M6L-PN-qlN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3m9-4w-IUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4810" y="-2802"/>
+        </scene>
+        <!--SignupViewController1-->
+        <scene sceneID="ohV-0S-0sI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SignupViewController1" storyboardName="SignUP" referencedIdentifier="SignupViewController1" id="A1E-Mf-3uQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3w-hY-6Nm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5595" y="-2361"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Bizfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="main view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUX-s3-1Z6">
+                                <rect key="frame" x="149" y="323" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5to-Vt-P9P">
+                                <rect key="frame" x="129" y="554" width="118" height="30"/>
+                                <state key="normal" title="change language"/>
+                                <connections>
+                                    <action selector="changeLanguage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oTA-5J-auz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5to-Vt-P9P" secondAttribute="bottom" constant="83" id="1k2-YX-KhR"/>
+                            <constraint firstItem="eUX-s3-1Z6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AG7-eB-ljJ"/>
+                            <constraint firstItem="5to-Vt-P9P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ELg-6z-Cmx"/>
+                            <constraint firstItem="eUX-s3-1Z6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e1y-gv-YqL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4082" y="-2804"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="tYe-st-9ae">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m1E-xG-pO7" customClass="SettingsViewController" customModule="Bizfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j8r-M9-ujg"/>
+                        <viewControllerLayoutGuide type="bottom" id="6yS-2d-2cd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kGZ-UE-1Mj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzd-VZ-emh">
+                                <rect key="frame" x="162" y="90" width="50" height="30"/>
+                                <state key="normal" title="English"/>
+                                <connections>
+                                    <action selector="changeLanguage:" destination="m1E-xG-pO7" eventType="touchUpInside" id="r55-OY-lsy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXA-Pj-z0Q">
+                                <rect key="frame" x="171" y="136" width="33" height="30"/>
+                                <state key="normal" title="Farsi"/>
+                                <connections>
+                                    <action selector="changeLanguage:" destination="m1E-xG-pO7" eventType="touchUpInside" id="v7K-L4-w2a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dzd-VZ-emh" firstAttribute="top" secondItem="j8r-M9-ujg" secondAttribute="bottom" constant="70" id="AIu-2R-T19"/>
+                            <constraint firstItem="dXA-Pj-z0Q" firstAttribute="top" secondItem="dzd-VZ-emh" secondAttribute="bottom" constant="16" id="GgI-lU-cD0"/>
+                            <constraint firstItem="dzd-VZ-emh" firstAttribute="centerX" secondItem="dXA-Pj-z0Q" secondAttribute="centerX" id="RbB-Hs-Y1x"/>
+                            <constraint firstItem="dzd-VZ-emh" firstAttribute="centerX" secondItem="kGZ-UE-1Mj" secondAttribute="centerX" id="qcu-Gx-5mc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FtK-8j-iYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3391" y="-2804"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mnI-EQ-CVZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z9P-HM-4T2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7se-VC-CKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KgK-ge-CfJ" kind="relationship" relationship="rootViewController" id="ijh-J2-AvI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhz-9X-U2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5594" y="-2802"/>
+        </scene>
+    </scenes>
+</document>
